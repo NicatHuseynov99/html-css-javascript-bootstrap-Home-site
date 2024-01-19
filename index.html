@@ -4,10 +4,125 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="asset/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="asset/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="asset/css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="asset/css/style.css" />
     <title>Home</title>
   </head>
   <body>
+    <div id="sidebar" class="sidebar">
+      <div class="custom-sidebar">
+        <div class="sidebar-header">
+          <div class="logo-img"><img src="asset/img/logo.jpg" alt="" /></div>
+          <div class="close-sidebar">
+            <i class="fa-solid fa-xmark" onclick="closeSidebar()"></i>
+          </div>
+        </div>
+        <div class="sidebar-main">
+          <div class="site-location">
+            <div class="location">
+              <a href="#">
+                <span>Your Location</span>
+                <div class="current-location">Select a Location</div>
+              </a>
+              <div class="icon-location">
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+          </div>
+          <div class="all-categories">
+            <div onclick="clickmenu()" class="categories-header" href="">
+              <i class="fa-solid fa-bars"></i>
+              <span class="text">ALL CATEGORIES</span>
+              <i id="icon-menu" class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div id="categories-menu" class="categories-menu">
+              <ul class="sidebar-menu">
+                <li>
+                  <a
+                    ><i class="fa-brands fa-apple"></i>Fruits &amp;
+                    Vegetables</a
+                  >
+                </li>
+                <li>
+                  <a
+                    ><i class="fa-solid fa-bowl-food"></i>Meats &amp; Seafood</a
+                  >
+                </li>
+                <li>
+                  <a><i class="fa-solid fa-egg"></i> Breakfast &amp; Dairy</a>
+                </li>
+                <li>
+                  <a> <i class="fa-solid fa-cake-candles"></i>Beverages</a>
+                </li>
+                <li>
+                  <a
+                    ><i class="fa-solid fa-cookie-bite"></i> Breads &amp;
+                    Bakery</a
+                  >
+                </li>
+                <li>
+                  <a> <i class="fa-solid fa-cookie"></i>Frozen Foods</a>
+                </li>
+                <li>
+                  <a
+                    ><i class="fa-solid fa-cloud-meatball"></i> Biscuits &amp;
+                    Snacks</a
+                  >
+                </li>
+                <li>
+                  <a
+                    ><i class="fa-solid fa-wheat-awn"></i> Grocery &amp;
+                    Staples</a
+                  >
+                </li>
+                <li class="li-menu">
+                  <a> Value of the Day</a>
+                </li>
+                <li>
+                  <a>Top 100 Offers</a>
+                </li>
+                <li>
+                  <a> New Arrivals</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="canvas-title">Site Navigation</div>
+          <div class="menu-1">
+            <ul>
+              <li>
+                <a href="">Home</a>
+              </li>
+              <li><a href="">Shop</a></li>
+              <li>
+                <a href=""
+                  ><i class="fa-solid fa-drumstick-bite"></i>Meats & Seafood</a
+                >
+              </li>
+              <li>
+                <a href=""><i class="fa-solid fa-cake-candles"></i>Bakery</a>
+              </li>
+              <li>
+                <a href=""><i class="fa-solid fa-mug-saucer"></i>Bevarages</a>
+              </li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="site-copyright">
+            Copyright 2023 © Bacola WordPress Theme. All rights reserved.
+            Powered by KlbTheme.
+          </div>
+          <div class="language">
+            <ul>
+              <li><a href="">English</a></li>
+              <li><a href="">USD</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
     <section id="store-notice">
       <div class="container">
         <div>
@@ -16,66 +131,1445 @@
         </div>
       </div>
     </section>
-
-    <section id="slide">
-      <div class="slideshow-container">
-        <div class="mySlides fades">
-          <div class="content-wrapper">
-            <div class="content-header">
-              <div class="content-description">Exclusive Offer</div>
-              <div class="content-discount">-40% Off</div>
+    <header class="header">
+      <section id="header-top">
+        <div class="container-flex">
+          <div class="container-wrapper">
+            <div class="wrapper-form">
+              <div class="wrapper">
+                <div class="column-left">
+                  <ul>
+                    <li>
+                      <a href="">About Us</a>
+                    </li>
+                    <li class="li-main">
+                      <a href="">My account</a>
+                    </li>
+                    <li class="li-main">
+                      <a href="">Wishlist</a>
+                    </li>
+                    <li class="li-main">
+                      <a href="">Order Tracking</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="column-right">
+                  <div class="topbar-notice">
+                    <i class="fa-regular fa-hand"></i>
+                    <span
+                      >100% Secure delivery without contacting the courier</span
+                    >
+                  </div>
+                  <div class="text-content">
+                    Need help? Call Us:
+                    <a href=""
+                      ><strong style="color: #2bbef9">+ 0020 500</strong></a
+                    >
+                  </div>
+                  <div class="switchers">
+                    <div>
+                      <ul>
+                        <li class="li-left">
+                          <a href=""
+                            >English<i class="fa-solid fa-chevron-down"></i
+                          ></a>
+                        </li>
+                        <li class="li-right">
+                          <a href=""
+                            >USD<i class="fa-solid fa-chevron-down"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="content-main">
-              <h3 class="entry-title">Quality Freshness Guaranteed!</h3>
-              <div class="content-text">Only this week. Don’t miss...</div>
-            </div>
-            <div class="content-footer">
-              <span class="price-text">from </span
-              ><span class="price">$14.35</span>
-            </div>
-            <a class="button">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-          <div class="image-wrapper">
-            <img
-              src="asset/img/slide-img/slider-image-7.jpg"
-              style="width: 100% "
-            />
           </div>
         </div>
-        <div class="mySlides fades">
-          <div class="content-wrapper">
-            <div class="content-header">
-              <div class="content-description">Exclusive Offer</div>
-              <div class="content-discount">-20% Off</div>
+      </section>
+      <section id="header-main">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-1 col-4 d-xl-none">
+              <div class="menu">
+                <i class="fa-solid fa-bars" onclick="openSidebar()"></i>
+              </div>
             </div>
-            <div class="content-main">
-              <h3 class="entry-title">A different kind of grocery store</h3>
-              <div class="content-text">Only this week. Don’t miss...</div>
+            <div class="col-xl-2 col-md-3 col-3">
+              <div class="left">
+                <div class="img-logo">
+                  <img class="img1" src="asset/img/logo.jpg" alt="" />
+                  <img class="img2" src="asset/img/logo2.png" alt="" /><span
+                    class="img-text d-md-block d-none"
+                    >Online Grocery Shopping Center</span
+                  >
+                </div>
+              </div>
             </div>
-            <div class="content-footer">
-              <span class="price-text">from </span
-              ><span class="price">$7.99</span>
+            <div class="col-xl-8 col-md-5 d-md-block d-none">
+              <div class="center">
+                <div class="location">
+                  <div class="location-flex">
+                    <a href="#">
+                      <span>Your Location</span>
+                      <div class="current-location">Select a Location</div>
+                    </a>
+                    <div class="icon-location">
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="header-search">
+                  <form class="header-form">
+                    <input
+                      class="header-input"
+                      type="search"
+                      placeholder="Search for products..."
+                    />
+                    <button type="submit" class="header-button">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
             </div>
-            <a class="button">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
-          </div>
-          <div class="image-wrapper">
-            <img
-              src="asset/img/slide-img/slider-image-6.jpg"
-              style="width: 100%"
-            />
+            <div class="col-xl-2 col-md-3 col-5">
+              <div class="right">
+                <div class="buttons">
+                  <div class="profil-icon">
+                    <div class="profil">
+                      <a href=""><i class="fa-regular fa-user"></i></a>
+                    </div>
+                  </div>
+                  <div class="money d-sm-block d-none"><span>$0.00</span></div>
+                  <div class="shop">
+                    <a href=""><i class="fa-solid fa-shop"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
 
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-      <br />
-    </section>
+      <section id="header-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="d-none d-xl-block col-xl-4">
+              <div class="all-categories" onclick="clickmenu2()">
+                <div class="categories-header" href="">
+                  <i class="fa-solid fa-bars"></i>
+                  <span class="text">ALL CATEGORIES</span>
+                  <i id="icon-menu2" class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div id="categories-menu2" class="categories-menu">
+                  <ul class="sidebar-menu">
+                    <li>
+                      <a
+                        ><i class="fa-brands fa-apple"></i>Fruits &amp;
+                        Vegetables</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        ><i class="fa-solid fa-bowl-food"></i>Meats &amp;
+                        Seafood</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        ><i class="fa-solid fa-egg"></i> Breakfast &amp;
+                        Dairy</a
+                      >
+                    </li>
+                    <li>
+                      <a> <i class="fa-solid fa-cake-candles"></i>Beverages</a>
+                    </li>
+                    <li>
+                      <a
+                        ><i class="fa-solid fa-cookie-bite"></i> Breads &amp;
+                        Bakery</a
+                      >
+                    </li>
+                    <li>
+                      <a> <i class="fa-solid fa-cookie"></i>Frozen Foods</a>
+                    </li>
+                    <li>
+                      <a
+                        ><i class="fa-solid fa-cloud-meatball"></i> Biscuits
+                        &amp; Snacks</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        ><i class="fa-solid fa-wheat-awn"></i> Grocery &amp;
+                        Staples</a
+                      >
+                    </li>
+                    <li class="li-menu">
+                      <a> Value of the Day</a>
+                    </li>
+                    <li>
+                      <a>Top 100 Offers</a>
+                    </li>
+                    <li>
+                      <a> New Arrivals</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="d-none d-xl-block col-xl-8">
+              <div class="menu-categories">
+                <div class="menu-2">
+                  <ul>
+                    <li>
+                      <a href="">Home</a>
+                    </li>
+                    <li><a href="">Shop</a></li>
+                    <li>
+                      <a href=""
+                        ><i class="fa-solid fa-drumstick-bite"></i>Meats &
+                        Seafood</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><i class="fa-solid fa-cake-candles"></i>Bakery</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><i class="fa-solid fa-mug-saucer"></i>Bevarages</a
+                      >
+                    </li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main class="main">
+      <section id="slide">
+        <div class="slideshow-container">
+          <div class="mySlides fades">
+            <div class="content-wrapper">
+              <div class="content-header">
+                <div class="content-description">Exclusive Offer</div>
+                <div class="content-discount">-40% Off</div>
+              </div>
+              <div class="content-main">
+                <h3 class="entry-title">Quality Freshness Guaranteed!</h3>
+                <div class="content-text">Only this week. Don’t miss...</div>
+              </div>
+              <div class="content-footer">
+                <span class="price-text">from </span
+                ><span class="price">$14.35</span>
+              </div>
+              <a class="button"
+                >Shop Now <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+            <div class="image-wrapper">
+              <img
+                src="asset/img/slide-img/slider-image-7.jpg"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+          <div class="mySlides fades">
+            <div class="content-wrapper">
+              <div class="content-header">
+                <div class="content-description">Exclusive Offer</div>
+                <div class="content-discount">-20% Off</div>
+              </div>
+              <div class="content-main">
+                <h3 class="entry-title">A different kind of grocery store</h3>
+                <div class="content-text">Only this week. Don’t miss...</div>
+              </div>
+              <div class="content-footer">
+                <span class="price-text">from </span
+                ><span class="price">$7.99</span>
+              </div>
+              <a class="button"
+                >Shop Now <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+            <div class="image-wrapper">
+              <img
+                src="asset/img/slide-img/slider-image-6.jpg"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+      </section>
+
+      <section id="elementor-area">
+        <div class="container-flex">
+          <div class="container-wrapper">
+            <div class="wrapper-form">
+              <div class="wrapper">
+                <div class="first">
+                  <div class="category">
+                    <div class="category-image">
+                      <a><img src="asset/img/categories/1.jpg" /></a>
+                    </div>
+                    <div class="category-detail">
+                      <h3>
+                        <a href="">Beverages</a>
+                      </h3>
+                      <div class="category-count">11 Items</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="categories-wrapper">
+                  <div class="category">
+                    <div class="category-image">
+                      <a><img src="asset/img/categories/2.jpg" /></a>
+                    </div>
+                    <div class="category-detail">
+                      <h3>
+                        <a href="">Biscuits &amp; Snacks</a>
+                      </h3>
+                      <div class="category-count">6 Items</div>
+                    </div>
+                  </div>
+
+                  <div class="category">
+                    <div class="category-image">
+                      <a><img src="asset/img/categories/3.jpg" /></a>
+                    </div>
+                    <div class="category-detail">
+                      <h3>
+                        <a href="">Breads &amp; Bakery</a>
+                      </h3>
+                      <div class="category-count">6 Items</div>
+                    </div>
+                  </div>
+
+                  <div class="category">
+                    <div class="category-image">
+                      <a><img src="asset/img/categories/4.jpg" /></a>
+                    </div>
+                    <div class="category-detail">
+                      <h3>
+                        <a href="">Breakfast &amp; Dairy</a>
+                      </h3>
+                      <div class="category-count">8 Items</div>
+                    </div>
+                  </div>
+
+                  <div class="category">
+                    <div class="category-image">
+                      <a><img src="asset/img/categories/5.jpg" /></a>
+                    </div>
+                    <div class="category-detail">
+                      <h3>
+                        <a href="">Frozen Foods</a>
+                      </h3>
+                      <div class="category-count">7 Items</div>
+                    </div>
+                  </div>
+
+                  <div class="category">
+                    <div class="category-image">
+                      <a><img src="asset/img/categories/6.jpg" /></a>
+                    </div>
+                    <div class="category-detail">
+                      <h3>
+                        <a href="">Fruits &amp; Vegetables</a>
+                      </h3>
+                      <div class="category-count">12 Items</div>
+                    </div>
+                  </div>
+
+                  <div class="category">
+                    <div class="category-image">
+                      <a><img src="asset/img/categories/7.jpg" /></a>
+                    </div>
+                    <div class="category-detail">
+                      <h3>
+                        <a href="">Grocery &amp; Staples</a>
+                      </h3>
+                      <div class="category-count">7 Items</div>
+                    </div>
+                  </div>
+
+                  <div class="category">
+                    <div class="category-image">
+                      <a><img src="asset/img/categories/8.jpg" /></a>
+                    </div>
+                    <div class="category-detail">
+                      <h3>
+                        <a href="">Household Needs</a>
+                      </h3>
+                      <div class="category-count">1 Items</div>
+                    </div>
+                  </div>
+
+                  <div class="category">
+                    <div class="category-image">
+                      <a><img src="asset/img/categories/9.jpg" /></a>
+                    </div>
+                    <div class="category-detail">
+                      <h3>
+                        <a href="">Meats &amp; Seafood</a>
+                      </h3>
+                      <div class="category-count">5 Items</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="products">
+        <div class="container-flex">
+          <div class="container-wrapper">
+            <div class="wrapper-form">
+              <div class="this-week">
+                <div>
+                  <div class="product-header">
+                    <h4>Deaks of the <strong>week!</strong></h4>
+                    <div class="date">
+                      <div class="dates days">86</div>
+                      <span>:</span>
+                      <div class="dates hours">06</div>
+                      <span>:</span>
+                      <div class="dates minutes">26</div>
+                      <span>:</span>
+                      <div class="dates second">12</div>
+                    </div>
+                    <div class="date-text">
+                      Remains until the end of the offer
+                    </div>
+                  </div>
+                  <div class="product">
+                    <div class="product-image">
+                      <div class="product-badges">
+                        <span class="onsale">19%</span>
+                      </div>
+                      <a href=""
+                        ><img src="asset/img/products/7.jpg" alt=""
+                      /></a>
+                    </div>
+                    <div class="product-content">
+                      <div class="price">
+                        <span><del>$5.49</del>$4.49</span>
+                      </div>
+                      <h3 class="product-title">
+                        Chobani Complete Vanilla Greek Yogurt
+                      </h3>
+                      <div class="product-meta">
+                        <div class="product-unit">1 kg</div>
+                        <div class="in-stock">In Stock</div>
+                      </div>
+                      <div class="product-rating">
+                        <div class="star">
+                          <i class="fa-solid fa-star"></i
+                          ><i class="fa-solid fa-star"></i
+                          ><i class="fa-solid fa-star"></i
+                          ><i class="fa-solid fa-star"></i
+                          ><i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="count-rating">1</div>
+                      </div>
+                      <div class="product-count">
+                        <div class="product-pcs">
+                          Available : <span>44</span>
+                        </div>
+                        <div class="product-progress">
+                          <span class="progress"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="all-this-week">
+                <div class="product">
+                  <div class="product-image">
+                    <div class="product-badges">
+                      <span class="onsale">19%</span>
+                      <span class="product-about">organic</span>
+                    </div>
+                    <a href=""><img src="asset/img/products/1.jpg" alt="" /></a>
+                  </div>
+                  <div class="product-content">
+                    <h3 class="product-title">All Natural Chicken Meatballs</h3>
+                    <div class="product-meta">
+                      <div class="in-stock">In Stock</div>
+                    </div>
+                    <div class="product-rating">
+                      <div class="star">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="count-rating">1</div>
+                    </div>
+                    <div class="price">
+                      <span><del>$9.35</del>$7.25</span>
+                    </div>
+                    <div class="add-cart"><a href="">Add to cart</a></div>
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="product-image">
+                    <div class="product-badges">
+                      <span class="onsale">29%</span>
+                    </div>
+                    <a href=""><img src="asset/img/products/2.jpg" alt="" /></a>
+                  </div>
+                  <div class="product-content">
+                    <h3 class="product-title">
+                      Angie’s Boomchickapop Sweet & Salty Kettle Corn
+                    </h3>
+                    <div class="product-meta">
+                      <div class="in-stock">In Stock</div>
+                    </div>
+                    <div class="product-rating">
+                      <div class="star">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="count-rating">1</div>
+                    </div>
+                    <div class="price">
+                      <span><del>$4.35</del>$3.25</span>
+                    </div>
+                    <div class="add-cart"><a href="">Add to cart</a></div>
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="product-image">
+                    <div class="product-badges">
+                      <span class="onsale">19%</span>
+                      <span class="product-about">organic</span>
+                    </div>
+                    <a href=""><img src="asset/img/products/3.jpg" alt="" /></a>
+                  </div>
+                  <div class="product-content">
+                    <h3 class="product-title">
+                      Field Roast Chao Cheese Creamy Original
+                    </h3>
+                    <div class="product-meta">
+                      <div class="in-stock">In Stock</div>
+                    </div>
+                    <div class="product-rating">
+                      <div class="star">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="count-rating">1</div>
+                    </div>
+                    <div class="price">
+                      <span><del>$4.35</del>$3.25</span>
+                    </div>
+                    <div class="add-cart"><a href="">Add to cart</a></div>
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="product-image">
+                    <div class="product-badges">
+                      <span class="onsale">29%</span>
+                      <span class="product-about">organic</span>
+                    </div>
+                    <a href=""><img src="asset/img/products/4.jpg" alt="" /></a>
+                  </div>
+                  <div class="product-content">
+                    <h3 class="product-title">
+                      Foster Farms Takeout Crispy Classic Buffalo Wings
+                    </h3>
+                    <div class="product-meta">
+                      <div class="in-stock">In Stock</div>
+                    </div>
+                    <div class="product-rating">
+                      <div class="star">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="count-rating">1</div>
+                    </div>
+                    <div class="price">
+                      <span>$7.25-$49.99</span>
+                    </div>
+                    <div class="add-cart"><a href="">Add to cart</a></div>
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="product-image">
+                    <div class="product-badges">
+                      <span class="onsale">10%</span>
+                      <span class="product-about">organic</span>
+                    </div>
+                    <a href=""><img src="asset/img/products/5.jpg" alt="" /></a>
+                  </div>
+                  <div class="product-content">
+                    <h3 class="product-title">
+                      Blue Diamond Almonds Lightly Salted
+                    </h3>
+                    <div class="product-meta">
+                      <div class="in-stock">In Stock</div>
+                    </div>
+                    <div class="product-rating">
+                      <div class="star">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="count-rating">1</div>
+                    </div>
+                    <div class="price">
+                      <span><del>$11.35</del>$10.25</span>
+                    </div>
+                    <div class="add-cart"><a href="">Add to cart</a></div>
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="product-image">
+                    <div class="product-badges">
+                      <span class="onsale">12%</span>
+                    </div>
+                    <a href=""><img src="asset/img/products/6.jpg" alt="" /></a>
+                  </div>
+                  <div class="product-content">
+                    <h3 class="product-title">Blueberries – 1 Pint Package</h3>
+                    <div class="product-meta">
+                      <div class="in-stock">In Stock</div>
+                    </div>
+                    <div class="product-rating">
+                      <div class="star">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                      <div class="count-rating">1</div>
+                    </div>
+                    <div class="price">
+                      <span><del>$4.35</del>$3.99</span>
+                    </div>
+                    <div class="add-cart"><a href="">Add to cart</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="discount-weekend">
+        <div class="container">
+          <div class="wrapper">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="discount-wrapper">
+                  <div class="banner-content">
+                    <div class="content-header">
+                      <div class="discount-text">Weekend Discount 40%</div>
+                    </div>
+
+                    <div class="content-main">
+                      <h3 class="content-title">Cookie and Ice Cream</h3>
+                      <div class="content-bottom">Bacola Weekend Discount</div>
+                    </div>
+                    <a href="">Shop Now</a>
+                  </div>
+                  <div class="banner-img">
+                    <img src="asset/img/banner/1.jpg" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="discount-wrapper">
+                  <div class="banner-content">
+                    <div class="content-header">
+                      <div class="discount-text">Weekend Discount 40%</div>
+                    </div>
+
+                    <div class="content-main">
+                      <h3 class="content-title">Cookie and Ice Cream</h3>
+                      <div class="content-bottom">Bacola Weekend Discount</div>
+                    </div>
+                    <a href="">Shop Now</a>
+                  </div>
+                  <div class="banner-img">
+                    <img src="asset/img/banner/2.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="carousel">
+        <div class="container">
+          <div class="wrapper-form">
+            <div class="owl-carousel owl-theme salam">
+              <div class="item">
+                <div class="wrapper">
+                  <div class="carousel-image">
+                    <div class="product-badges">
+                      <span class="onsale">29%</span>
+                      <span class="product-about">organic</span>
+                    </div>
+                    <a href=""
+                      ><img src="asset/img/owl.carousel/1.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="carousel-content">
+                    <h3 class="product-title">Fresh Organic Broccoli Crowns</h3>
+                    <div class="product-meta">
+                      <div class="product-unit">1 kg</div>
+                      <div class="in-stock">In Stock</div>
+                    </div>
+                    <div class="product-rating">
+                      <div class="star">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+
+                      <div class="count-rating">1</div>
+                    </div>
+                    <div class="price">
+                      <span><del>$6.77</del>$6.77</span>
+                    </div>
+                    <div class="add-cart"><a href="">Add to cart</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="wrapper">
+                  <div class="carousel-image">
+                    <div class="product-badges">
+                      <span class="onsale">29%</span>
+                      <span class="product-about">organic</span>
+                    </div>
+                    <a href=""
+                      ><img src="asset/img/owl.carousel/2.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="carousel-content">
+                    <h3 class="product-title">
+                      Encore Seafoods Stuffed Salmon
+                    </h3>
+                    <div class="product-meta">
+                      <div class="product-unit">1 kg</div>
+                      <div class="in-stock">In Stock</div>
+                    </div>
+                    <div class="product-rating">
+                      <div class="star">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+
+                      <div class="count-rating">1</div>
+                    </div>
+                    <div class="price">
+                      <span><del>$32.49</del>$27.49</span>
+                    </div>
+                    <div class="add-cart"><a href="">Add to cart</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="wrapper">
+                  <div class="carousel-image">
+                    <div class="product-badges">
+                      <span class="onsale">29%</span>
+                      <span class="product-about">organic</span>
+                    </div>
+                    <a href=""
+                      ><img src="asset/img/owl.carousel/3.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="carousel-content">
+                    <h3 class="product-title">
+                      Diamond Almonds Lightly Salted
+                    </h3>
+                    <div class="product-meta">
+                      <div class="product-unit">1 kg</div>
+                      <div class="in-stock">In Stock</div>
+                    </div>
+                    <div class="product-rating">
+                      <div class="star">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+
+                      <div class="count-rating">1</div>
+                    </div>
+                    <div class="price">
+                      <span><del>$5.49</del>$4.49</span>
+                    </div>
+                    <div class="add-cart"><a href="">Add to cart</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="wrapper">
+                  <div class="carousel-image">
+                    <div class="product-badges">
+                      <span class="onsale">29%</span>
+                      <span class="product-about">organic</span>
+                    </div>
+                    <a href=""
+                      ><img src="asset/img/owl.carousel/4.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="carousel-content">
+                    <h3 class="product-title">Angus Alert Beef Stew Meat</h3>
+                    <div class="product-meta">
+                      <div class="product-unit">1 kg</div>
+                      <div class="in-stock">In Stock</div>
+                    </div>
+                    <div class="product-rating">
+                      <div class="star">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+
+                      <div class="count-rating">1</div>
+                    </div>
+                    <div class="price">
+                      <span><del>$79.99</del>$49.99</span>
+                    </div>
+                    <div class="add-cart"><a href="">Add to cart</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="wrapper">
+                  <div class="carousel-image">
+                    <div class="product-badges">
+                      <span class="onsale">29%</span>
+                      <span class="product-about">organic</span>
+                    </div>
+                    <a href=""
+                      ><img src="asset/img/owl.carousel/5.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="carousel-content">
+                    <h3 class="product-title">All Natural Chicken Meatballs</h3>
+                    <div class="product-meta">
+                      <div class="product-unit">1 kg</div>
+                      <div class="in-stock">In Stock</div>
+                    </div>
+                    <div class="product-rating">
+                      <div class="star">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+
+                      <div class="count-rating">1</div>
+                    </div>
+                    <div class="price">
+                      <span><del>$9.35</del>$7.25</span>
+                    </div>
+                    <div class="add-cart"><a href="">Add to cart</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="wrapper">
+                  <div class="carousel-image">
+                    <div class="product-badges">
+                      <span class="onsale">29%</span>
+                      <span class="product-about">organic</span>
+                    </div>
+                    <a href=""
+                      ><img src="asset/img/owl.carousel/6.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="carousel-content">
+                    <h3 class="product-title">Angie’s & Salty Kettle Corn</h3>
+                    <div class="product-meta">
+                      <div class="product-unit">1 kg</div>
+                      <div class="in-stock">In Stock</div>
+                    </div>
+                    <div class="product-rating">
+                      <div class="star">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+
+                      <div class="count-rating">1</div>
+                    </div>
+                    <div class="price">
+                      <span><del>$4.77</del>$3.77</span>
+                    </div>
+                    <div class="add-cart"><a href="">Add to cart</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="wrapper">
+                  <div class="carousel-image">
+                    <div class="product-badges">
+                      <span class="onsale">29%</span>
+                      <span class="product-about">organic</span>
+                    </div>
+                    <a href=""
+                      ><img src="asset/img/owl.carousel/7.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="carousel-content">
+                    <h3 class="product-title">Field Roast Creamy Original</h3>
+                    <div class="product-meta">
+                      <div class="product-unit">1 kg</div>
+                      <div class="in-stock">In Stock</div>
+                    </div>
+                    <div class="product-rating">
+                      <div class="star">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+
+                      <div class="count-rating">1</div>
+                    </div>
+                    <div class="price">
+                      <span><del>$.77</del>$7.77</span>
+                    </div>
+                    <div class="add-cart"><a href="">Add to cart</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="wrapper">
+                  <div class="carousel-image">
+                    <div class="product-badges">
+                      <span class="onsale">29%</span>
+                      <span class="product-about">organic</span>
+                    </div>
+                    <a href=""
+                      ><img src="asset/img/owl.carousel/8.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="carousel-content">
+                    <h3 class="product-title">
+                      Diamond Almonds Lightly Salted
+                    </h3>
+                    <div class="product-meta">
+                      <div class="product-unit">1 kg</div>
+                      <div class="in-stock">In Stock</div>
+                    </div>
+                    <div class="product-rating">
+                      <div class="star">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+
+                      <div class="count-rating">1</div>
+                    </div>
+                    <div class="price">
+                      <span><del>$11.68</del>$10.58</span>
+                    </div>
+                    <div class="add-cart"><a href="">Add to cart</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="post">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-4">
+              <div class="wrapper">
+                <div class="post">
+                  <div class="post-img">
+                    <a href=""><img src="asset/img/post/1.jpg" alt="" /></a>
+                  </div>
+                  <div class="post-wrapper">
+                    <div class="entry-category">
+                      <a href="">Tips &amp; Tricks</a>
+                    </div>
+                    <h2>
+                      But I must explain to you how all this mistaken idea
+                    </h2>
+                    <div class="entry-meta">
+                      <span class="span1">3 May 2021 </span
+                      ><span class="comments">3 comments</span
+                      ><span class="span3"
+                        ><span class="span-icon">by</span>Bacola</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="wrapper">
+                <div class="post">
+                  <div class="post-img">
+                    <a href=""><img src="asset/img/post/2.jpg" alt="" /></a>
+                  </div>
+                  <div class="post-wrapper">
+                    <div class="entry-category">
+                      <a href="">Grocery</a>
+                    </div>
+                    <h2>The Problem With Typefaces on the Web</h2>
+                    <div class="entry-meta">
+                      <span class="span1">3 May 2021 </span
+                      ><span class="comments">3 comments</span
+                      ><span class="span3"
+                        ><span class="span-icon">by</span>Bacola</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="wrapper">
+                <div class="post">
+                  <div class="post-img">
+                    <a href=""><img src="asset/img/post/3.jpg" alt="" /></a>
+                  </div>
+                  <div class="post-wrapper">
+                    <div class="entry-category">
+                      <a href="">Grocery</a>
+                    </div>
+                    <h2>English Breakfast Tea With Tasty Donut Desserts</h2>
+                    <div class="entry-meta">
+                      <span class="span1">3 May 2021 </span
+                      ><span class="comments">3 comments</span
+                      ><span class="span3"
+                        ><span class="span-icon">by</span>Bacola</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <section id="footer-subscribe">
+        <div class="container">
+          <div class="row">
+            <div class="left col-12 col-lg-5">
+              <div class="left-text">
+                <div class="subscribe-content">
+                  <h6 class="entry-subtitle">
+                    $20 discount for your first order
+                  </h6>
+                  <h3 class="entry-title">Join our newsletter and get...</h3>
+                  <div class="entry-teaser">
+                    <p>
+                      Join our email subscription now to get updates on
+                      promotions and coupons.
+                    </p>
+                  </div>
+                  <div class="form-wrapper">
+                    <form>
+                      <div class="form-fields">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input
+                          class="subscribe-input"
+                          type="email"
+                          name="Email"
+                          placeholder="Your email address"
+                          required=""
+                        />
+                        <input type="submit" class="submit" value="Subscribe" />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="right col-12 col-lg-7">
+              <div class="img">
+                <div class="subscribe-image">
+                  <img src="asset/img/footer-subscribe/coupon.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="footer-iconboxes">
+        <div class="container">
+          <div class="row">
+            <div class="col col-12 col-md-6 col-lg-3">
+              <div class="iconbox">
+                <div class="iconbox-icon">
+                  <i class="fa-solid fa-bottle-water"></i>
+                </div>
+                <div class="iconbox-detail">
+                  <span>Everyday fresh products</span>
+                </div>
+              </div>
+            </div>
+            <div class="col col-12 col-md-6 col-lg-3">
+              <div class="iconbox">
+                <div class="iconbox-icon">
+                  <i class="fa-solid fa-truck"></i>
+                </div>
+                <div class="iconbox-detail">
+                  <span>Free delivery for order over $70 </span>
+                </div>
+              </div>
+            </div>
+            <div class="col col-12 col-md-6 col-lg-3">
+              <div class="iconbox">
+                <div class="iconbox-icon">
+                  <i class="fa-solid fa-percent"></i>
+                </div>
+                <div class="iconbox-detail">
+                  <span>Daily Mega Discounts</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col col-12 col-md-6 col-lg-3"
+              style="border-style: none"
+            >
+              <div class="iconbox">
+                <div class="iconbox-icon">
+                  <i class="fa-solid fa-dollar-sign"></i>
+                </div>
+                <div class="iconbox-detail">
+                  <span>Best price on the market</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="footer-widgets">
+        <div class="container border-enable">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl">
+              <div class="menu">
+                <h4>FRUIT &amp; VEGETABLES</h4>
+                <div class="nav-menu">
+                  <ul>
+                    <li>
+                      <a>Fresh Vegetables</a>
+                    </li>
+                    <li>
+                      <a>Herbs &amp; Seasonings</a>
+                    </li>
+                    <li>
+                      <a>Fresh Fruits</a>
+                    </li>
+                    <li>
+                      <a>Cuts &amp; Sprouts</a>
+                    </li>
+                    <li>
+                      <a>Exotic Fruits &amp; Veggies</a>
+                    </li>
+                    <li>
+                      <a>Packaged Produce</a>
+                    </li>
+                    <li>
+                      <a>Party Trays</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl">
+              <div class="menu">
+                <h4>Breakfast &amp; Dairy</h4>
+                <div class="nav-menu">
+                  <ul>
+                    <li>
+                      <a>Milk &amp; Flavoured Milk</a>
+                    </li>
+                    <li>
+                      <a>Butter and Margarine</a>
+                    </li>
+                    <li>
+                      <a>Cheese</a>
+                    </li>
+                    <li>
+                      <a>Eggs Substitutes</a>
+                    </li>
+                    <li>
+                      <a>Honey</a>
+                    </li>
+                    <li>
+                      <a>Marmalades</a>
+                    </li>
+                    <li>
+                      <a>Sour Cream and Dips</a>
+                    </li>
+                    <li>
+                      <a>Yogurt</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl">
+              <div class="menu">
+                <h4>Meat &amp; Seafood</h4>
+                <div class="nav-menu">
+                  <ul>
+                    <li>
+                      <a>Breakfast Sausage</a>
+                    </li>
+                    <li>
+                      <a>Dinner Sausage</a>
+                    </li>
+                    <li>
+                      <a>Beef</a>
+                    </li>
+                    <li>
+                      <a>Chicken</a>
+                    </li>
+                    <li>
+                      <a>Sliced Deli Meat</a>
+                    </li>
+                    <li>
+                      <a>Shrimp</a>
+                    </li>
+                    <li>
+                      <a>Wild Caught Fillets</a>
+                    </li>
+                    <li>
+                      <a>Crab and Shellfish</a>
+                    </li>
+                    <li>
+                      <a>Farm Raised Fillets</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl">
+              <div class="menu">
+                <h4>Beverages</h4>
+                <div class="nav-menu">
+                  <ul>
+                    <li>
+                      <a>Water</a>
+                    </li>
+                    <li>
+                      <a>Sparkling Water</a>
+                    </li>
+                    <li>
+                      <a>Soda &amp; Pop</a>
+                    </li>
+                    <li>
+                      <a>Coffee</a>
+                    </li>
+                    <li>
+                      <a>Milk &amp; Plant-Based Milk</a>
+                    </li>
+                    <li>
+                      <a>Tea &amp; Kombucha</a>
+                    </li>
+                    <li>
+                      <a>Drink Boxes &amp; Pouches</a>
+                    </li>
+                    <li>
+                      <a>Craft Beer</a>
+                    </li>
+                    <li>
+                      <a>Wine</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl">
+              <div class="menu">
+                <h4>Breads &amp; Bakery</h4>
+                <div class="nav-menu">
+                  <ul>
+                    <li>
+                      <a>Milk &amp; Flavoured Milk</a>
+                    </li>
+                    <li>
+                      <a>Butter and Margarine</a>
+                    </li>
+                    <li>
+                      <a>Cheese</a>
+                    </li>
+                    <li>
+                      <a>Eggs Substitutes</a>
+                    </li>
+                    <li>
+                      <a>Honey</a>
+                    </li>
+                    <li>
+                      <a>Marmalades</a>
+                    </li>
+                    <li>
+                      <a>Sour Cream and Dips</a>
+                    </li>
+                    <li>
+                      <a>Yogurt</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="footer-contacts">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="site-phone">
+                <div class="phone-icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="phone-detail">
+                  <h4>8 800 555-55</h4>
+                  <span>Working 8:00 - 22:00</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="site-mobile-app">
+                <div class="app-content">
+                  <h6>Download App on Mobile :</h6>
+                  <span>15% discount on your first purchase</span>
+                </div>
+                <div class="app-buttons">
+                  <a href="https://play.google.com/store">
+                    <img src="asset/img/footer-contact/google-play.png" />
+                  </a>
+                  <a href="https://www.apple.com/app-store/">
+                    <img src="asset/img/footer-contact/app-store.png" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="site-social">
+                <ul>
+                  <li>
+                    <a href="https://www.facebook.com/" target="_blank"
+                      ><i class="fa-brands fa-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/" target="_blank"
+                      ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/" target="_blank"
+                      ><i class="fa-brands fa-instagram"></i> ></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="footer-bottom">
+        <div class="container border-enable">
+          <div class="row">
+            <div class="site-copyright col-md-6 col-12 col-lg-5">
+              <div class="site-grid">
+                <p>
+                  Copyright 2023 © Bacola WordPress Theme. All rights reserved.
+                  Powered by KlbTheme.
+                </p>
+              </div>
+            </div>
+
+            <div class="site-menu col-md-6 col-12 col-lg-4">
+              <div class="site-grid site-grid-end">
+                <ul>
+                  <li>
+                    <a>Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a>Terms and Conditions</a>
+                  </li>
+                  <li>
+                    <a>Cookie</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="site-payments col-md-12 col-12 col-lg-3">
+              <div class="site-grid">
+                <a><img src="asset/img/footer-bottom/payments.jpg" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
     <script
       src="https://kit.fontawesome.com/5aa2c9b4a7.js"
       crossorigin="anonymous"
     ></script>
+    <script src="asset/js/jquery.min.js"></script>
+    <script src="asset/js/owl.carousel.js"></script>
     <script src="asset/js/script.js"></script>
   </body>
 </html>
