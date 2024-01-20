@@ -194,7 +194,7 @@
     justify-content: center;
   }
   #post .post-img img {
-    width: 370px;
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 991px) and (min-width: 768px) {
@@ -259,6 +259,19 @@
   }
   .header #header-main {
     padding: 30px 0;
+  }
+  #discount .discount-img img {
+    min-height: 250px;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 326px) {
+  #discount .discount-img img {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 325px) {
+  #discount .discount-img img {
+    min-height: 240px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1404,6 +1417,81 @@
   border-radius: 15px;
   color: #233a95;
   font-weight: 500;
+}
+.main #text {
+  margin: 10px 0;
+}
+.main #text .container-flex .container-wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+.main #text .container-flex .container-wrapper .wrapper-form {
+  padding: 15px 12px;
+}
+.main #text .container-flex .container-wrapper .wrapper-form .module-body {
+  padding: 20px 15px;
+  background-color: #fbeacf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #202435;
+  letter-spacing: 4px;
+}
+.main #discount .container {
+  max-width: 1200px;
+}
+.main #discount .container .wrapper .discount-wrapper {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+}
+.main #discount .container .wrapper .discount-wrapper .discount-content {
+  padding: 30px;
+  position: absolute;
+  max-width: 80%;
+}
+.main #discount .container .wrapper .discount-wrapper .discount-content .content-header {
+  margin-bottom: 10px;
+}
+.main #discount .container .wrapper .discount-wrapper .discount-content .content-header .discount-text {
+  color: #00b853;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+.main #discount .container .wrapper .discount-wrapper .discount-content .content-main {
+  margin-bottom: 20px;
+}
+.main #discount .container .wrapper .discount-wrapper .discount-content .content-main .content-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+.main #discount .container .wrapper .discount-wrapper .discount-content .content-main .content-bottom {
+  font-size: 12px;
+  font-weight: 400;
+  color: #9b9bb4;
+}
+.main #discount .container .wrapper .discount-wrapper .discount-content a {
+  text-decoration: none;
+  font-size: 12px;
+  border-radius: 28px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #c2c2d3;
+  padding: 10px 20px;
+}
+.main #discount .container .wrapper .discount-wrapper .discount-img {
+  width: 100%;
+}
+.main #discount .container .wrapper .discount-wrapper .discount-img img {
+  width: 100%;
+  border-radius: 8px;
 }
 .main #post {
   padding: 15px 0;

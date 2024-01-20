@@ -284,7 +284,7 @@
   #post {
     .post-img {
       img {
-        width: 370px;
+        max-width: 100%;
       }
     }
   }
@@ -382,8 +382,34 @@
       padding: 30px 0;
     }
   }
+  #discount {
+    .discount-img {
+      img {
+        min-height: 250px;
+      }
+    }
+  }
 }
 
+@media screen and (max-width: 767px) and (min-width: 326px) {
+  #discount {
+    .discount-img {
+      img {
+        height: 200px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 325px) {
+  #discount {
+    .discount-img {
+      img {
+        min-height: 240px;
+      }
+    }
+  }
+}
 @media screen and (max-width: 767px) {
   #elementor-area {
     .wrapper {
@@ -1603,7 +1629,6 @@
   #discount-weekend {
     .container {
       max-width: 1200px;
-
       .wrapper {
         .discount-wrapper {
           position: relative;
@@ -1802,6 +1827,92 @@
     }
   }
 
+  #text {
+    margin: 10px 0;
+    .container-flex {
+      .container-wrapper {
+        max-width: 1200px;
+        margin: auto;
+        .wrapper-form {
+          padding: 15px 12px;
+          .module-body {
+            padding: 20px 15px;
+            background-color: #fbeacf;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #202435;
+            letter-spacing: 4px;
+          }
+        }
+      }
+    }
+  }
+
+  #discount {
+    .container {
+      max-width: 1200px;
+      .wrapper {
+        .discount-wrapper {
+          overflow: hidden;
+          position: relative;
+          display: flex;
+          align-items: center;
+          padding: 15px 0;
+          .discount-content {
+            padding: 30px;
+            position: absolute;
+            max-width: 80%;
+
+            .content-header {
+              margin-bottom: 10px;
+              .discount-text {
+                color: #00b853;
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0;
+              }
+            }
+
+            .content-main {
+              margin-bottom: 20px;
+              .content-title {
+                font-size: 24px;
+                font-weight: 600;
+              }
+              .content-bottom {
+                font-size: 12px;
+                font-weight: 400;
+                color: #9b9bb4;
+              }
+            }
+
+            a {
+              text-decoration: none;
+              font-size: 12px;
+              border-radius: 28px;
+              font-weight: 600;
+              color: #ffffff;
+              background-color: #c2c2d3;
+              padding: 10px 20px;
+            }
+          }
+
+          .discount-img {
+            width: 100%;
+            img {
+              width: 100%;
+              border-radius: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
   #post {
     padding: 15px 0;
     .container {
