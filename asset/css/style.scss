@@ -1889,12 +1889,19 @@
       max-width: 1200px;
       .wrapper {
         .row {
-          padding: 0 12px;
+          .col {
+            padding: 0;
+          }
+          .col-6 {
+            padding: 0;
+          }
           .product {
             padding: 20px;
             width: 100%;
             height: 100%;
             border: 1px solid#edeef5;
+            margin: 15px;
+
             &:hover {
               position: relative;
               .product-content {
