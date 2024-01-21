@@ -74,12 +74,12 @@ function clickmenu2() {
   }
 }
 
-
-function openSidebar(){
-var openSidebar=document.getElementById("sidebar")
-openSidebar.classList.add("active");
+function openSidebar() {
+  var openSidebar = document.getElementById("sidebar");
+  openSidebar.classList.add("active");
 }
-function closeSidebar(){
-  var openSidebar=document.getElementById("sidebar")
+function closeSidebar() {
+  var openSidebar = document.getElementById("sidebar");
   openSidebar.classList.remove("active");
-  }
+}
+

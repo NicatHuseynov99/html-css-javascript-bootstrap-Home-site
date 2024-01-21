@@ -1146,15 +1146,8 @@
 .main #products .container-flex .container-wrapper .wrapper-form .all-this-week {
   position: relative;
 }
-.main #products .container-flex .container-wrapper .wrapper-form .all-this-week .product:hover {
-  position: relative;
-}
 .main #products .container-flex .container-wrapper .wrapper-form .all-this-week .product:hover .product-content .add-cart {
   display: block;
-  position: relative;
-}
-.main #products .container-flex .container-wrapper .wrapper-form .all-this-week .product:hover .product-content .add-cart a {
-  position: absolute;
 }
 .main #products .container-flex .container-wrapper .wrapper-form .all-this-week .product .product-image {
   margin-bottom: 15px;
@@ -1240,7 +1233,7 @@
 }
 .main #products .container-flex .container-wrapper .wrapper-form .all-this-week .product .product-content .add-cart {
   margin-top: 15px;
-  display: block;
+  display: none;
 }
 .main #products .container-flex .container-wrapper .wrapper-form .all-this-week .product .product-content .add-cart a {
   cursor: pointer;
@@ -1439,6 +1432,113 @@
   text-transform: uppercase;
   color: #202435;
   letter-spacing: 4px;
+}
+.main #discount-products .container {
+  max-width: 1200px;
+}
+.main #discount-products .container .row .product {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #edeef5;
+}
+.main #discount-products .container .row .product:hover {
+  position: relative;
+}
+.main #discount-products .container .row .product:hover .product-content {
+  position: relative;
+}
+.main #discount-products .container .row .product:hover .product-content .add-cart {
+  display: block;
+}
+.main #discount-products .container .row .product .product-image {
+  margin-bottom: 15px;
+  position: relative;
+}
+.main #discount-products .container .row .product .product-image a img {
+  width: 100%;
+}
+.main #discount-products .container .row .product .product-image .product-badges {
+  position: absolute;
+  display: inline-flex;
+  flex-direction: column;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+.main #discount-products .container .row .product .product-image .product-badges .onsale {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  width: auto;
+  max-height: 24px;
+  padding: 5px 12px;
+  color: #ffffff;
+  background-color: #2bbef9;
+  border-radius: 4px;
+  text-align: center;
+  width: 45px;
+}
+.main #discount-products .container .row .product .product-content .product-title {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.main #discount-products .container .row .product .product-content .product-meta {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.main #discount-products .container .row .product .product-content .product-meta .in-stock {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #00b853;
+  font-size: 12px;
+}
+.main #discount-products .container .row .product .product-content .product-rating {
+  display: flex;
+  align-items: center;
+}
+.main #discount-products .container .row .product .product-content .product-rating .star {
+  font-size: 10px;
+  color: #ffcd00;
+}
+.main #discount-products .container .row .product .product-content .product-rating .count-rating {
+  margin-left: 8px;
+  color: #71778e;
+  font-size: 12px;
+}
+.main #discount-products .container .row .product .product-content .price span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #d51243;
+}
+.main #discount-products .container .row .product .product-content .price span del {
+  font-size: 85%;
+  padding-right: 6px;
+  color: #c2c3d3;
+}
+.main #discount-products .container .row .product .product-content .add-cart {
+  display: none;
+  margin-top: 15px;
+}
+.main #discount-products .container .row .product .product-content .add-cart a {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-decoration: none;
+  font-size: 12px;
+  height: 34px;
+  background-color: #233a95;
+  border-radius: 15px;
+  color: #ffffff;
+  font-weight: 500;
 }
 .main #discount .container {
   max-width: 1200px;
