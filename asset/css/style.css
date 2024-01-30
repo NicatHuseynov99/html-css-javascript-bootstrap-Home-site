@@ -144,6 +144,49 @@
   #post .post-img img {
     width: 100%;
   }
+  #about h2 {
+    padding-left: 60px;
+  }
+  #about p {
+    padding-left: 60px;
+  }
+  #author .author-information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #author .author-information .author-img {
+    padding-right: 15px;
+    width: 50%;
+  }
+  #author .author-information .author-about {
+    padding-left: 15px;
+    width: 50%;
+  }
+  #author .author-information .author-about span {
+    padding-left: 40px;
+  }
+  #author .author-information .author-about h3 {
+    padding-left: 40px;
+  }
+  #author .author-information .author-about p {
+    padding-left: 40px;
+  }
+  #author .author-text {
+    margin-top: -130px;
+    position: relative;
+  }
+  #author .author-text p {
+    background-color: white;
+    padding: 60px 15px 60px 100px;
+    margin-left: 100px;
+  }
+  #main-header .wrapper {
+    padding: 260px 0;
+  }
+  #main-header .wrapper h1 {
+    font-size: 60px;
+  }
 }
 @media screen and (max-width: 991px) {
   #slide .content-footer {
@@ -195,6 +238,12 @@
   }
   #post .post-img img {
     max-width: 100%;
+  }
+  #author .author-img {
+    margin-bottom: 25px;
+  }
+  #author .author-text {
+    margin-top: 45px;
   }
 }
 @media screen and (max-width: 991px) and (min-width: 768px) {
@@ -869,6 +918,208 @@
   margin-right: 7px;
 }
 
+.main #main-header {
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main #main-header .container {
+  max-width: 1200px;
+}
+.main #main-header .container .wrapper {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main #main-header .container .wrapper h1 {
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 8px;
+  color: white;
+}
+.main #main-header .container .wrapper h4 {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: 8px;
+  color: white;
+}
+.main #information {
+  margin-top: 40px;
+  padding: 15px 0;
+}
+.main #information .container {
+  max-width: 1200px;
+}
+.main #information .container .wrapper p {
+  font-size: 14px;
+  font-weight: 400;
+}
+.main #about {
+  padding: 15px 0;
+  margin-bottom: 26px;
+}
+.main #about .container {
+  max-width: 1200px;
+}
+.main #about .container h2 {
+  margin: 0;
+  margin-top: 10px;
+  font-weight: 600;
+}
+.main #about .container p {
+  margin: 0;
+  margin-top: 40px;
+}
+.main #author .container {
+  max-width: 1200px;
+}
+.main #author .container .wrapper .author-img img {
+  max-width: 100%;
+}
+.main #author .container .wrapper .author-about h3 {
+  margin: 40px 0;
+}
+.main #main-text .container {
+  max-width: 1200px;
+}
+.main #contact-header {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.main #contact-header .container {
+  max-width: 1200px;
+}
+.main #contact-header .container .wrapper .contact-title {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main #contact-header .container .wrapper .contact-title h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 40px;
+  font-weight: 400;
+}
+.main #contact-header .container .wrapper .contact-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main #contact-header .container .wrapper .contact-text p {
+  font-size: 14px;
+  font-weight: 400;
+}
+.main #contact-us .container {
+  max-width: 1200px;
+}
+.main #contact-us .container .row .contact {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  background-color: #f3f3f6;
+  border-radius: 8px;
+}
+.main #contact-us .container .row .contact i {
+  font-size: 40px;
+  color: #233a95;
+  margin-bottom: 20px;
+}
+.main #contact-us .container .row .contact h5 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.main #contact-us .container .row .contact p {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+.main #send-us .container {
+  max-width: 1200px;
+}
+.main #send-us .container .wrapper {
+  border: 1px solid #edeef5;
+  margin-top: 40px;
+  padding: 90px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+.main #send-us .container .wrapper .form {
+  max-width: 760px;
+}
+.main #send-us .container .wrapper .form .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 40px;
+  margin-bottom: 56px;
+  border-bottom: 1px solid #edeef5;
+}
+.main #send-us .container .wrapper .form .title h2 {
+  font-size: 40px;
+  margin: 0;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+.main #send-us .container .wrapper .form .title p {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.main #send-us .container .wrapper .form .form-wrapper .form {
+  padding: 15px;
+  width: 100%;
+}
+.main #send-us .container .wrapper .form .form-wrapper .form label {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.main #send-us .container .wrapper .form .form-wrapper .form input {
+  background-color: #f3f4f7;
+  padding: 0 15px;
+  height: 40px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+.main #send-us .container .wrapper .form .form-wrapper .form .message {
+  background-color: #f3f4f7;
+  padding: 10px 15px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  height: 120px;
+}
+.main #send-us .container .wrapper .form .form-wrapper .form button {
+  height: 45px;
+  font-size: 14px;
+  padding: 0 20px;
+  border: 1px solid transparent;
+  background-color: #233a95;
+  color: white;
+  border-radius: 6px;
+}
 .main #slide .slideshow-container {
   position: relative;
 }
@@ -1466,10 +1717,13 @@
   letter-spacing: 4px;
 }
 .main #discount-products {
-  padding: 15px 0;
+  margin-bottom: 30px;
 }
 .main #discount-products .container {
   max-width: 1200px;
+}
+.main #discount-products .container .wrapper {
+  padding: 0 12px;
 }
 .main #discount-products .container .wrapper .row .col {
   padding: 0;
@@ -1482,9 +1736,9 @@
   width: 100%;
   height: 100%;
   border: 1px solid #edeef5;
-  margin: 15px;
 }
 .main #discount-products .container .wrapper .row .product:hover {
+  margin-bottom: 15px;
   position: relative;
 }
 .main #discount-products .container .wrapper .row .product:hover .product-content {
